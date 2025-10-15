@@ -291,6 +291,5 @@ This setup can be shared internally with developers or demonstrated to employers
 
 ---
 
-### Author
 Created by **[Baker]**  
 📍 *Local AI Engineering & Developer Tools Enthusiast*
