@@ -25,7 +25,8 @@ Instead of relying on paid or rate-limited tools like GitHub Copilot or Claude f
 
 ---
 
-## ⚙️ My Specs ( you can use pretty much anything, including cpu computing, MacOS, Linux etc. -> The commands might change a bit, for example, instead of winget, you use curl -fsSL https://ollama.ai/install.sh | sh on linux): 
+## ⚙️ My Specs :
+> ( you can use pretty much anything, including cpu computing, MacOS, Linux etc. -> The commands might change a bit, for example, instead of winget, you use curl -fsSL https://ollama.ai/install.sh | sh on linux)
 
 - **Windows 10/11**
 - **NVIDIA GPU** (RTX 3080 or higher recommended)
