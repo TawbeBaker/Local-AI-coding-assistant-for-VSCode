@@ -1,6 +1,6 @@
-# 🧠 Local AI Copilot — Run a Fully Local Coding Assistant
+# 🧠 Local AI Copilot: Run a Fully Local Coding Assistant
 
-> A step-by-step guide to set up your own **GitHub Copilot alternative** using **Ollama**, **VS Code**, and **Continue.dev**, running entirely **on your local GPU** — no cloud, no limits.
+> A step-by-step guide to set up your own **GitHub Copilot alternative** using **Ollama**, **VS Code**, and **Continue.dev**, running entirely **on your local GPU** ; no cloud, no limits.
 
 ---
 
@@ -9,9 +9,9 @@
 This project demonstrates how to create a **local AI development assistant** on Windows.  
 Instead of relying on paid or rate-limited tools like GitHub Copilot or Claude for VS Code, you’ll run a **local LLM (Large Language Model)** that helps you **generate code, refactor, and run commands directly inside VS Code**.
 
-✅ **All processing happens locally** — perfect for privacy, offline coding, and reproducibility.  
-✅ **GPU-accelerated** — uses your NVIDIA GPU (e.g., RTX 3080 or higher).  
-✅ **Free and open-source stack** — based on Ollama and Continue.dev.
+✅ **All processing happens locally** ; perfect for privacy, offline coding, and reproducibility.  
+✅ **GPU-accelerated** ; uses your NVIDIA GPU (e.g., RTX 3080 or higher).  
+✅ **Free and open-source stack** ; based on Ollama and Continue.dev.
 
 ---
 
@@ -128,7 +128,7 @@ You can test it directly:
 ollama run mistral
 ```
 
-> 💡 Check GPU activity using `nvidia-smi` — you should see `ollama` using VRAM while generating text.
+> 💡 Check GPU activity using `nvidia-smi` ; you should see `ollama` using VRAM while generating text.
 
 ---
 
@@ -146,7 +146,7 @@ Launch Continue:
 ```
 Ctrl + L
 ```
-Select **Ollama** when prompted — it should auto-detect your local server at:
+Select **Ollama** when prompted ; it should auto-detect your local server at:
 ```
 http://localhost:11434
 ```
@@ -292,7 +292,7 @@ Write-Host "Ollama restarted successfully."
 Inside VS Code Continue panel:
 > 💡 “Create a TypeScript file structure for a REST API with Express.js.”
 
-You’ll see the model generate folders, files, and example code locally — just like Copilot, but **private and free**.
+You’ll see the model generate folders, files, and example code locally ; just like Copilot, but **private and free**.
 
 ---
 
