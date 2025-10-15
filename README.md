@@ -256,17 +256,18 @@ Write-Host "Ollama restarted successfully."
 
 ---
 
-## ✅ Quick Setup Checklist
+<details>
+<summary>✅ Quick Setup Checklist (click to expand)</summary>
 
-```text
-[ ] winget install Ollama.Ollama
-[ ] setx OLLAMA_USE_GPU 1
-[ ] Add Ollama to PATH if needed
-[ ] Close GUI and run: ollama serve
-[ ] ollama pull mistral (or your model)
-[ ] Install Continue.dev in VS Code
-[ ] Open Continue → select Ollama
-```
+- [ ] Install Ollama → `winget install Ollama.Ollama`
+- [ ] Enable GPU → `setx OLLAMA_USE_GPU 1`
+- [ ] Add Ollama to PATH if needed
+- [ ] Restart Ollama (`ollama serve`)
+- [ ] Pull a model (`ollama pull mistral`)
+- [ ] Install Continue.dev in VS Code
+- [ ] Open Continue → select Ollama
+
+</details>
 
 ---
 
