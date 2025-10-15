@@ -49,7 +49,7 @@ nvidia-smi
 winget install Microsoft.PowerShell
 ```
 
-You can also use VS Code’s built-in terminal.
+You can also use VS Code’s built-in terminal or install it from the microsoft website using the GUI which is easier.
 
 ---
 
@@ -61,7 +61,7 @@ winget install Ollama.Ollama
 
 This installs both the **Ollama GUI** and the **CLI (command-line interface)**.
 
-If you prefer manual installation:  
+If you prefer manual installation without the terminal:  
 Download from [https://ollama.com/download](https://ollama.com/download)
 
 ---
@@ -74,6 +74,8 @@ If `ollama` is not recognized in PowerShell:
 setx Path "$($env:Path);C:\Users\$env:USERNAME\AppData\Local\Programs\Ollama"
 ```
 
+It is important to understand what you are running on your computer, therefore always read the command. In this case, USERNAME should be replace by the actual username of the computer.
+
 Then **restart PowerShell or VS Code**.
 
 Verify:
@@ -84,6 +86,7 @@ ollama --version
 ---
 
 ### 4. Enable GPU Acceleration
+>, if you are using a GPU (graphics card) as mine by default used CPU, which was slow. 
 
 Enable GPU usage globally:
 ```powershell
@@ -123,6 +126,7 @@ Then pull it locally:
 ```powershell
 ollama pull mistral
 ```
+> I personally used ollama pull deepseek-coder
 
 You can test it directly:
 ```powershell
@@ -147,7 +151,7 @@ Launch Continue:
 ```
 Ctrl + L
 ```
-Select **Ollama** when prompted ; it should auto-detect your local server at:
+Select **Ollama** when prompted, or in the left bottom side of the dialogue box ; it should auto-detect your local server at:
 ```
 http://localhost:11434
 ```
@@ -242,32 +246,10 @@ Write-Host "Ollama restarted successfully."
 
 ---
 
-## 📁 Recommended Repo Structure
-
-```
-.
-├── README.md
-├── scripts/
-│   ├── setup_ollama.ps1
-│   └── restart_ollama.ps1
-├── .continue/
-│   ├── config.json
-│   └── modes/
-│       └── localCoder.json
-├── docs/
-│   ├── 01_installation.md
-│   ├── 02_vscode_setup.md
-│   └── 03_models_guide.md
-└── assets/
-    ├── screenshots/
-    └── banners/
-```
-
----
-
 ## 🧠 Notes & Best Practices
 
-- Use **7B quantized models** for 10 GB VRAM GPUs like RTX 3080.  
+- Use **7B quantized models** for 10 GB VRAM GPUs like RTX 3080.
+- In general 1B = 1GB, although I have managed to run 32B models ona 3090 24GB. (It depends on quantization, algorithms, etc.)  
 - Always restart Ollama after changing environment variables.  
 - Keep your `.continue` configuration versioned in Git for consistency.  
 - If sharing this setup with a team, create a `models.txt` listing all models used.
@@ -281,7 +263,7 @@ Write-Host "Ollama restarted successfully."
 [ ] setx OLLAMA_USE_GPU 1
 [ ] Add Ollama to PATH if needed
 [ ] Close GUI and run: ollama serve
-[ ] ollama pull mistral
+[ ] ollama pull mistral (or your model)
 [ ] Install Continue.dev in VS Code
 [ ] Open Continue → select Ollama
 ```
@@ -290,7 +272,7 @@ Write-Host "Ollama restarted successfully."
 
 ## 💬 Example Usage
 
-Inside VS Code Continue panel:
+Inside VS Code Continue panel, as a remplacememnt for Copilot:
 > 💡 “Create a TypeScript file structure for a REST API with Express.js.”
 
 You’ll see the model generate folders, files, and example code locally ; just like Copilot, but **private and free**.
@@ -309,5 +291,5 @@ This setup can be shared internally with developers or demonstrated to employers
 ---
 
 ### Author
-Created by **[Your Name]**  
+Created by **[Baker]**  
 📍 *Local AI Engineering & Developer Tools Enthusiast*
